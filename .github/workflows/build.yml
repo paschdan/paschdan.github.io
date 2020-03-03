@@ -17,10 +17,11 @@ jobs:
     - run: npm run build --if-present
 
     - name: Commit
+      working-directory: ./dist
       run: |
         echo ${{ github.ref }}
-        cd dist
         git add .
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "ci: deploy" -a | exit 0
+
