@@ -31,5 +31,8 @@
     "@vuepress/plugin-blog": "^1.9.2",
     "vuepress": "^1.2.0",
     "vuepress-plugin-crisp": "^1.0.0"
+  },
+  "dependencies": {
+    "vuepress-auth0": "^0.2.5"
   }
 }

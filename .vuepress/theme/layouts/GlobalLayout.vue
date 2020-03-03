@@ -1,7 +1,7 @@
 <template>
     <div id="global-layout">
         <header style="background-color: #DDD">
-            <router-link to="/">{{ $site.title }}</router-link>· <router-link to="/tag/">Tag</router-link>
+            <NavLinks />
         </header><br>
         <DefaultGlobalLayout/><br>
         <footer style="background-color: #DDD"><a href="https://github.com/paschdan/paschdan.github.io">Github</a> · Powered by VuePress</p>
@@ -11,8 +11,10 @@
 
 <script>
   import GlobalLayout from '@app/components/GlobalLayout.vue'
+  import NavLinks from '../components/NavLinks'
 
   export default {
-    components: { DefaultGlobalLayout: GlobalLayout },
+    components: { DefaultGlobalLayout: GlobalLayout, NavLinks
+    },
   }
 </script>
