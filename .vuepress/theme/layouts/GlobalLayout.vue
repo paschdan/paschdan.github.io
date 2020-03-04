@@ -1,5 +1,5 @@
 <template>
-    <q-layout view="hHh lpR fFf">
+    <q-layout id="layout" view="hHh lpR fFf" style="display: none">
         <Header/>
         <q-page-container>
             <q-page class="q-px-xl q-py-md flex q-mx-xl">
@@ -19,14 +19,11 @@
     components: {
       DefaultGlobalLayout: GlobalLayout, Header, Footer,
     },
-    beforeMount () {
-      this.$q.loading.show({
-        delay: 400, // ms
-      })
-    },
     mounted () {
-      this.$q.loading.hide()
-    }
-
+      const self = this
+      setTimeout(() => {
+        document.getElementById('layout').style.display = 'block'
+      }, 100)
+    },
   }
 </script>
