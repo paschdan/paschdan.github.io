@@ -29,6 +29,7 @@
   "homepage": "https://github.com/z3by/vuepress-blog-template#readme",
   "devDependencies": {
     "@vuepress/plugin-blog": "^1.9.2",
+    "@vuepress/plugin-google-analytics": "^1.3.1",
     "vuepress": "^1.2.0",
     "vuepress-plugin-crisp": "^1.0.0"
   },
