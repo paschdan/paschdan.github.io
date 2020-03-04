@@ -1,7 +1,7 @@
 <template>
-    <ul id="default-layout">
-        <li v-for="tag in $tag.list">
-            <router-link class="page-link" :to="tag.path">{{ tag.name }}</router-link>
-        </li>
-    </ul>
+    <q-list>
+        <q-item v-for="tag in $tag.list" :to="tag.path" clickable dense>
+            <q-item-label overline> #{{ tag.name }}</q-item-label>
+        </q-item>
+    </q-list>
 </template>
