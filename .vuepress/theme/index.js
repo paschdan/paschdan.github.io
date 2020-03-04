@@ -7,12 +7,6 @@ const redirectUri = (process.env.NODE_ENV === 'development') ?
 module.exports = {
   plugins: [
     [
-      '@vuepress/google-analytics',
-      {
-        'ga': 'UA-47448605-4' // UA-00000000-0
-      }
-    ],
-    [
       Auth, {
       domain: 'paschdan.eu.auth0.com',
       redirectUri,

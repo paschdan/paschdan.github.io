@@ -1,4 +1,5 @@
 import Quasar, { Loading } from 'quasar'
+import initGa from './initGa'
 
 export default ({
                   Vue,
@@ -16,5 +17,10 @@ export default ({
         loading: { /* Loading defaults */ },
       },
     })
+    const cookiesAllowed = localStorage.getItem('cookie:all');
+    if (cookiesAllowed === 'true') {
+      initGa(Vue)
+    }
+
   }
 }
