@@ -119,7 +119,7 @@
         if (window.viewHome) {
           return run3dModeling()
         } else {
-          setTimeout(function () { checkReady()}, 100)
+          setTimeout(function () { checkReady()}, 1000)
         }
       }
 
