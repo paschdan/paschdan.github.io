@@ -2,6 +2,14 @@
     <div class="column items-center">
         <div class="col">
             <!-- Copy the following canvas and components in your page, changing their size / texts and other values if needed  -->
+            <h2>Hausplanung</h2>
+            <h3>Grundriss</h3>
+            <h5>Erdgeschoss:</h5>
+            <p><img src="images/house/erster_entwurf_eg.png" alt=""></p>
+            <h5>Obergeschoss</h5>
+            <p><img src="images/house/erster_entwurf_og.png" alt=""></p>
+
+            <h3>3D Modell</h3>
             <canvas id="viewerCanvas" class="viewerComponent" width="800" height="600"
                     style="background-color: #CCCCCC; border: 1px solid gray; outline:none" tabIndex="1"></canvas>
             <div id="viewerProgressDiv"
